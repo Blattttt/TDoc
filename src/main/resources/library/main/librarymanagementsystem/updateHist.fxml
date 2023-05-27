@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.main.librarymanagementsystem.application.UpdateHist">
+    <children>
+        <Label fx:id="clientsLabel11" layoutX="82.0" layoutY="232.0" text="Номер документа">
+            <font>
+                <Font name="Bookman Old Style" size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="updateButton" layoutX="365.0" layoutY="429.0" mnemonicParsing="false" text="Изменить" />
+        <Label fx:id="clientsLabel111" layoutX="42.0" layoutY="52.0" text="Изменение истории">
+            <font>
+                <Font name="Bookman Old Style" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="documentField" layoutX="233.0" layoutY="228.0" prefHeight="25.0" prefWidth="169.0" promptText="1" />
+      <Label fx:id="clientsLabel112" layoutX="136.0" layoutY="270.0" text="Сотрудник">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="workerField" layoutX="233.0" layoutY="267.0" prefHeight="25.0" prefWidth="169.0" promptText="1" />
+      <Label fx:id="clientsLabel113" layoutX="85.0" layoutY="309.0" text="Ключевой клиент">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="clientField" layoutX="233.0" layoutY="307.0" prefHeight="25.0" prefWidth="169.0" promptText="1" />
+      <Label fx:id="clientsLabel1121" layoutX="415.0" layoutY="231.0" text="Название">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="clientsLabel114" layoutX="453.0" layoutY="270.0" text="Дата">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="504.0" layoutY="228.0" prefHeight="25.0" prefWidth="186.0" promptText="Файл-Фамилия.dox" />
+      <Label fx:id="exceptionField" layoutX="287.0" layoutY="385.0" text="Ошибка введенных данных" visible="false">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="690.0" layoutY="538.0" mnemonicParsing="false" text="Отмена" />
+      <TextField fx:id="dateField" layoutX="504.0" layoutY="267.0" prefHeight="25.0" prefWidth="186.0" promptText="дд.мм.гггг" />
+    </children>
+</AnchorPane>

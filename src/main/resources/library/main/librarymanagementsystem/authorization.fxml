@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.main.librarymanagementsystem.application.authorizationController">
+    <children>
+        <Label fx:id="clientsLabel1" layoutX="225.0" layoutY="355.0" text="Пароль">
+            <font>
+                <Font name="Bookman Old Style" size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="clientsLabel11" layoutX="238.0" layoutY="318.0" text="Логин">
+            <font>
+                <Font name="Bookman Old Style" size="21.0" />
+            </font>
+        </Label>
+        <Button fx:id="doButton" layoutX="523.0" layoutY="343.0" mnemonicParsing="false" text="Войти" />
+      <Label fx:id="clientsLabel111" layoutX="263.0" layoutY="190.0" text="Добро пожаловать в TDoc">
+         <font>
+            <Font name="Bookman Old Style" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="326.0" layoutY="318.0"/>
+      <PasswordField fx:id="passwordField" layoutX="326.0" layoutY="355.0"/>
+      <Label fx:id="exceptionField" layoutX="299.0" layoutY="413.0" text="Ошибка введенных данных" visible="false">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.main.librarymanagementsystem.application.HistController">
+    <children>
+        <Button fx:id="exitButton" layoutX="676.0" layoutY="536.0" mnemonicParsing="false" text="Закрыть" />
+        <Label fx:id="clientsLabel" layoutX="47.0" layoutY="43.0" text="История файлов">
+            <font>
+                <Font name="Bookman Old Style" size="21.0" />
+            </font></Label>
+      <TableView fx:id="userTable" layoutX="32.0" layoutY="127.0" prefHeight="335.0" prefWidth="742.0">
+        <columns>
+          <TableColumn fx:id="Id" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="Document" prefWidth="110.0" text="Документ" />
+            <TableColumn fx:id="Worker" prefWidth="92.0" text="Исполнитель" />
+            <TableColumn fx:id="Client" prefWidth="130.0" text="Ключевой клиент" />
+            <TableColumn fx:id="Name" prefWidth="189.0" text="Название файла" />
+            <TableColumn fx:id="Data" prefWidth="180.0" text="Дата" />
+        </columns>
+      </TableView>
+      <Button fx:id="editButton" layoutX="54.0" layoutY="480.0" mnemonicParsing="false" text="Изменить" />
+    </children>
+</AnchorPane>
